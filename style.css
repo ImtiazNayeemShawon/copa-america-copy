@@ -1,0 +1,100 @@
+.container-head{
+                    padding-bottom: 80px;
+padding-top: 250px;
+    display: grid;
+   grid-gap:5px;
+   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+   grid-template-rows: repeat(all , 1fr);
+
+                  } 
+
+.img-side img{
+max-width: 600px;
+max-height: 600px;
+margin-bottom: 50px;
+
+}
+.container-head{
+                    background-color: blue;
+}
+.txt-side h1{
+                   
+                    
+                    color: white;
+                    font-family: sans-serif;
+                    font-size: 50px;
+}
+#btn1{
+color: white;
+background-color: purple;
+border: 0px ;
+padding: 7px;
+padding-left: 25px;
+padding-right: 25px;
+font-size: 20px;
+font-family: sans-serif;
+justify-content: center;
+
+}
+.txt-side{
+                    margin-top: 50px;
+margin-left: 100px;
+
+}
+.sala img{
+                    max-width:350px ;
+                   
+}
+.sala{
+ 
+   text-align: center;
+   background-color: rgb(228, 225, 219);
+   border: solid 2px white;
+   box-shadow: 5px 4px rgb(243, 238, 235);
+}
+
+
+.container-center{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px , 1fr));
+        grid-template-rows: repeat(2, 1fr); 
+        grid-gap: 50px;
+        align-content: center;
+        justify-content: center;
+
+}
+
+
+/*container-head:hover{
+transition: 3s;
+background-color: rgb(218, 32, 218);
+animation-duration: initial;
+}*/
+.container-head{
+                    animation-name: triangle;
+                    animation-duration: 5s;
+                    animation-timing-function: linear;
+                    animation-delay: 5s;
+                    animation-iteration-count:infinite;
+                    animation-fill-mode: backwards;
+                    animation-play-state: running;
+}
+@keyframes triangle{
+ 0%{
+background-color: blue;
+ }
+  50%{
+ background-color: rgb(177, 67, 177);
+   
+  }
+  75%{
+                    background-color: rgb(124, 15, 124);            
+  }
+
+100%{
+                    background-color: blue;
+}
+ 
+}
+
+
